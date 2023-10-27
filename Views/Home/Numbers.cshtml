@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model int[];
+<div>
+    <h1>Algunos numeros random desde el controlador</h1>
+    <ul class="border border-primary">
+        @foreach (int number in Model)
+        {
+            <li>@number</li>
+        }
+    </ul>
+</div>
